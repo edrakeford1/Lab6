@@ -18,13 +18,16 @@ users = {
     'johnny': 'Cougars1963!'
 }
 
+# input username
 username = input("Enter username: ")
 
+# checking for valid username
 if username not in users:
     print("User not found. Exiting.")
 else:
     password = input("Enter password: ")
 
+    # assigning security level
     if password == users[username]:
         if username == 'guest':
             security_level = 'Guest'
