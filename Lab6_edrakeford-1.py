@@ -25,3 +25,10 @@ if username not in users:
 else:
     password = input("Enter password: ")
 
+if password == users[username]:
+    if username == 'guest':
+        security_level = 'Guest'
+    else:
+        security_level = 'Security Level 1'
+
+    print(security_level)
